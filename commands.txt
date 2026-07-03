@@ -1,0 +1,23 @@
+git --version
+
+pip install uv
+
+uv init # initializes git 
+
+python -m venv .venv # create virtual env for python
+
+.venv/Scripts/Activate # to activate the virtual env
+
+if powershell execution policy is blocking script execution run 
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 
+
+and afterwards
+
+.venv/Scripts/Activate
+
+pip install -r requirements.txt # install the required libs/packages
+
+uvicorn api:app --reload # host the application on localhost - http://127.0.0.1:8000/
+
+python api.py # to run the app
